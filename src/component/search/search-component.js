@@ -12,7 +12,7 @@ import { useState } from "react";
   const handleSubmit = (e) => {
  e.preventDefault()
 
- fetch(`http://www.omdbapi.com/?t=${movie}&apikey=51de1062`)
+ fetch(`https://www.omdbapi.com/?t=${movie}&apikey=51de1062`)
  .then(response => response.json())
  .then(data => setData(data))
   }
